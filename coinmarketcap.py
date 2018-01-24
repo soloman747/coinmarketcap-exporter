@@ -17,7 +17,7 @@ log.addHandler(ch)
 
 class CoinCollector():
   def __init__(self):
-    self.endpoint = 'https://api.coinmarketcap.com/v1/ticker/'
+    self.endpoint = 'https://api.coinmarketcap.com/v1/ticker/?limit=0'
 
   def collect(self):
     # query the api
